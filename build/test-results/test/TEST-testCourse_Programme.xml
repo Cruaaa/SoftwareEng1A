@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testCourse_Programme" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-10-12T18:45:10" hostname="LAPTOP-2CFCHKF6" time="0.002">
+  <properties/>
+  <testcase name="testGetEnrolledStudents" classname="testCourse_Programme" time="0.001"/>
+  <testcase name="testGetEndDate" classname="testCourse_Programme" time="0.0"/>
+  <testcase name="testGetStartDate" classname="testCourse_Programme" time="0.001"/>
+  <testcase name="testGetCourseName" classname="testCourse_Programme" time="0.0"/>
+  <testcase name="testGetModules" classname="testCourse_Programme" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
