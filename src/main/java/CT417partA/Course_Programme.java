@@ -77,4 +77,24 @@ public class Course_Programme {
     public void setEndDate(DateTime endDate) {
         this.CourseEndDate = endDate;
     }
+
+    @Override
+    public String toString() {
+        String returnString="\n\n-----------Course:---------------------\n\n";
+
+        returnString+="Course Name: "+this.courseName+"\n"+"Start Date: "+CourseStartDate+"\nEnd Date: "+CourseEndDate;
+
+        returnString+="\n\nModules in this course: ";
+
+        for(Module m: modules)
+        {
+            returnString+=m.getModuleName();
+            returnString+="\nLecturer responsible: "+m.getTaughtBy().getName();
+            returnString+="\n\n";
+        }
+
+        returnString+="------------End of this CourseProgramme record------------\n\n";
+        return returnString;
+
+    }
 }

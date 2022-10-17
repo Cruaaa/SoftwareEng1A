@@ -89,4 +89,31 @@ public class Student {
     {
         courses.add(program);
     }
+
+    @Override
+    public String toString()
+    {
+        String returnString="\n\n All details associated with student \n\n";
+        returnString+="\n Student's name:" + this.getName() + "\n Student's username: " + this.getUsername();
+
+        returnString+="\n\nCourse(s) student is registered for:";
+
+        for(Course_Programme cp: courses)
+        {
+            returnString+="\n"+cp.getCourseName();
+        }
+
+        returnString+="\n\nModule(s) student is registered for:";
+
+        for(Course_Programme cp: courses)//should usually be only 1 course/
+        {
+            for(Module m: cp.getModules())
+            {
+                returnString+="\n\n"+m.getModuleName();
+            }
+        }
+
+        returnString+="\n\nend of record\n\n";
+        return returnString;
+    }
 }
